@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_bg.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_find.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_me.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_message.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_relative.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_text.xml" value="0.25729166666666664" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/activity_bottom.xml" value="0.22916666666666666" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/activity_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg1.xml" value="0.22916666666666666" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg2.xml" value="0.22916666666666666" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg3.xml" value="0.22916666666666666" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg4.xml" value="0.22916666666666666" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fg_content.xml" value="0.2246376811594203" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fg_test.xml" value="0.22418478260869565" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fragment_appearance.xml" value="0.21158690176322417" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fragment_appearance2.xml" value="0.21965579710144928" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/recycler_item.xml" value="0.22418478260869565" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/web_view.xml" value="0.2259963768115942" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
