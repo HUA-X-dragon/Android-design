@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fManager;
     private Fragment_appearance fg1;
-    private Fragment_test fg2, fg3, fg4;
+    private Fragment_happy fg2;
+    private Fragment_test fg3, fg4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.radioButton2:
                         if(fg2 == null){
-                            fg2 = new Fragment_test("戏乐");
+                            fg2 = new Fragment_happy();
                             fTransaction.add(R.id.ly_content,fg2);
                         }else{
                             fTransaction.show(fg2);

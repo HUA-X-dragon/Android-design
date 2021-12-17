@@ -54,7 +54,6 @@ public class Fragment_appearance2 extends Fragment {
 
     private TextView tv2, tv3, tv4, tv5;
     private ImageView img3, img4;
-    private WebView webView;
 
     @Nullable
     @Override
@@ -80,22 +79,25 @@ public class Fragment_appearance2 extends Fragment {
         tv4.setText("情节特辑");
         tv5.setText("了解更多");
 
-        webView = (WebView)mView.findViewById(R.id.web_v);
+
 
         tv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                webView.getSettings().setJavaScriptEnabled(true);
-                webView.loadUrl("https://www.baidu.com");
-                /*网页*/
-                webView.setWebViewClient(new WebViewClient() {
-                    @Override
-                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                        //返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
-                        view.loadUrl(url);
-                        return true;
-                    }
-                });
+                Intent intent=new Intent();
+                intent.putExtra("url", "https://search.bilibili.com/video?keyword=%E6%88%8F%E6%9B%B2%E5%A6%86%E5%AE%B9");
+                intent.setClass(getActivity(), Activity_webview.class);
+                getActivity().startActivity(intent);
+            }
+        });
+
+        tv5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.putExtra("url", "https://search.bilibili.com/video?keyword=%E6%88%8F%E6%9B%B2%E6%83%85%E8%8A%82");
+                intent.setClass(getActivity(), Activity_webview.class);
+                getActivity().startActivity(intent);
             }
         });
 
