@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
 
     private RadioGroup rg1;
     private RadioButton rgb1;
@@ -54,52 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
         fManager = getSupportFragmentManager();
         rg1 = (RadioGroup)findViewById(R.id.radiogroup);
+        rg1.setOnCheckedChangeListener(this);
         rgb1.setChecked(true);
-
-
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                FragmentTransaction fTransaction = fManager.beginTransaction();
-                hideAllFragment(fTransaction);
-                switch (checkedId){
-                    case R.id.radioButton:
-                        if(fg1 == null){
-                            fg1 = new Fragment_appearance();
-                            fTransaction.add(R.id.ly_content,fg1);
-                        }else{
-                            fTransaction.show(fg1);
-                        }
-                        break;
-                    case R.id.radioButton2:
-                        if(fg2 == null){
-                            fg2 = new Fragment_happy();
-                            fTransaction.add(R.id.ly_content,fg2);
-                        }else{
-                            fTransaction.show(fg2);
-                        }
-                        break;
-                    case R.id.radioButton3:
-                        if(fg3 == null){
-                            fg3 = new Fragment_test("戏商城");
-                            fTransaction.add(R.id.ly_content,fg3);
-                        }else{
-                            fTransaction.show(fg3);
-                        }
-                        break;
-                    case R.id.radioButton4:
-                        if(fg4 == null){
-                            fg4 = new Fragment_test("我的");
-                            fTransaction.add(R.id.ly_content,fg4);
-                        }else{
-                            fTransaction.show(fg4);
-                        }
-                        break;
-                }
-                fTransaction.commit();
-            }
-        });
     }
+
+
     private void hideAllFragment(FragmentTransaction fragmentTransaction){
         if(fg1 != null)fragmentTransaction.hide(fg1);
         if(fg2 != null)fragmentTransaction.hide(fg2);
@@ -107,4 +66,44 @@ public class MainActivity extends AppCompatActivity {
         if(fg4 != null)fragmentTransaction.hide(fg4);
     }
 
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        FragmentTransaction fTransaction = fManager.beginTransaction();
+        hideAllFragment(fTransaction);
+        switch (checkedId){
+            case R.id.radioButton:
+                if(fg1 == null){
+                    fg1 = new Fragment_appearance();
+                    fTransaction.add(R.id.ly_content,fg1);
+                }else{
+                    fTransaction.show(fg1);
+                }
+                break;
+            case R.id.radioButton2:
+                if(fg2 == null){
+                    fg2 = new Fragment_happy();
+                    fTransaction.add(R.id.ly_content,fg2);
+                }else{
+                    fTransaction.show(fg2);
+                }
+                break;
+            case R.id.radioButton3:
+                if(fg3 == null){
+                    fg3 = new Fragment_test("戏商城");
+                    fTransaction.add(R.id.ly_content,fg3);
+                }else{
+                    fTransaction.show(fg3);
+                }
+                break;
+            case R.id.radioButton4:
+                if(fg4 == null){
+                    fg4 = new Fragment_test("我的");
+                    fTransaction.add(R.id.ly_content,fg4);
+                }else{
+                    fTransaction.show(fg4);
+                }
+                break;
+        }
+        fTransaction.commit();
+    }
 }
