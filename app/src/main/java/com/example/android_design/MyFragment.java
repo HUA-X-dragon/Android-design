@@ -1,5 +1,6 @@
 package com.example.android_design;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,13 +37,13 @@ public class MyFragment extends Fragment {
     }
 
     private void initData() {
-        itemList.add(new Recycler_item(R.mipmap.bottom1, "1"));
-        itemList.add(new Recycler_item(R.mipmap.bottom2, "2"));
-        itemList.add(new Recycler_item(R.mipmap.bottom3, "3"));
-        itemList.add(new Recycler_item(R.mipmap.appearance_1, "3"));
-        itemList.add(new Recycler_item(R.mipmap.appearance_1, "3"));
-        itemList.add(new Recycler_item(R.mipmap.bottom3, "3"));
-        itemList.add(new Recycler_item(R.mipmap.bottom3, "3"));
+        itemList.add(new Recycler_item(R.mipmap.item_video1, "浙江少儿戏剧团《三岔口》精彩片段，超级好看", 1));
+        itemList.add(new Recycler_item(R.mipmap.item_video2, "浙江少儿戏剧团《三岔口》精彩片段，超级好看", 2));
+        itemList.add(new Recycler_item(R.mipmap.item_video8, "浙江少儿戏剧团《三岔口》精彩片段，超级好看", 3));
+        itemList.add(new Recycler_item(R.mipmap.item_video4, "浙江少儿戏剧团《三岔口》精彩片段，超级好看", 4));
+        itemList.add(new Recycler_item(R.mipmap.item_video5, "浙江少儿戏剧团《三岔口》精彩片段，超级好看", 5));
+        itemList.add(new Recycler_item(R.mipmap.item_video9, "3", 6));
+        itemList.add(new Recycler_item(R.mipmap.item_video7, "3", 7));
     }
     private void initRecyclerView() {
         //获取RecyclerView
@@ -60,7 +61,13 @@ public class MyFragment extends Fragment {
         recyclerAdapter.setOnItemClickListener(new RecyclerAdapter.OnItemClickListener() {
             @Override
             public void OnItemClick(View view, Recycler_item data) {
-                Toast.makeText(getActivity(),"我是item",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"我是item",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), Activity_video.class);
+                Bundle bd = new Bundle();
+                bd.putInt("id", data.getId());
+                intent.putExtras(bd);
+                getActivity().startActivity(intent);
             }
         });
     }

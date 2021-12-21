@@ -6,13 +6,23 @@ public class Recycler_item implements Serializable {
 
     private int Icon;
     private String mTitle;
+    private int id;
 
     public Recycler_item() {
     }
 
-    public Recycler_item(int icon, String mTitle) {
+    public Recycler_item(int icon, String mTitle, int id) {
         Icon = icon;
         this.mTitle = mTitle;
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getIcon() {

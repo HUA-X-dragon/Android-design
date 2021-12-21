@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/play_arrow.xml" value="0.13697916666666668" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_bg.xml" value="0.25729166666666664" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_find.xml" value="0.25729166666666664" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_me.xml" value="0.25729166666666664" />
@@ -11,6 +12,7 @@
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/drawable/table_menu_text.xml" value="0.25729166666666664" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/activity_bottom.xml" value="0.22916666666666666" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/activity_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/activity_video.xml" value="0.22010869565217392" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg1.xml" value="0.22916666666666666" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg2.xml" value="0.22916666666666666" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/bottom_fg3.xml" value="0.22916666666666666" />
@@ -20,7 +22,9 @@
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fragment_appearance.xml" value="0.21158690176322417" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fragment_appearance2.xml" value="0.21965579710144928" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/fragment_happy.xml" value="0.2259963768115942" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/item_view_pager.xml" value="0.22010869565217392" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/recycler_item.xml" value="0.22418478260869565" />
+        <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/videoview.xml" value="0.22146739130434784" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/web_view.xml" value="0.2259963768115942" />
         <entry key="..\:/AsProject/project2/Androiddesign/app/src/main/res/layout/webview_vr.xml" value="0.22146739130434784" />
       </map>

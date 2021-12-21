@@ -34,19 +34,19 @@ public class Fragment_appearance2 extends Fragment {
     private int oldPosition = 0;
     //存放图片的id
     private int[] imageIds = new int[]{
-            R.mipmap.img_dot1,
-            R.mipmap.img_dot2,
-            R.mipmap.img_dot1,
-            R.mipmap.img_dot2,
-            R.mipmap.img_dot1
+            R.mipmap.stage,
+            R.mipmap.face,
+            R.mipmap.performance,
+            R.mipmap.clothe,
+            R.mipmap.actor
     };
     //存放图片的标题
     private String[] titles = new String[]{
-            "轮播1",
-            "轮播2",
-            "轮播3",
-            "轮播4",
-            "轮播5"
+            "舞台",
+            "妆容",
+            "表演",
+            "服装",
+            "角色"
     };
     private TextView title;
     private ViewPagerAdapter adapter;
@@ -101,8 +101,8 @@ public class Fragment_appearance2 extends Fragment {
             }
         });
 
-        img3.setImageResource(R.mipmap.opera_face);
-        img4.setImageResource(R.mipmap.opera_content);
+        img3.setImageResource(R.mipmap.opera_face1);
+        img4.setImageResource(R.mipmap.opera_content1);
 
         //显示的图片
         images = new ArrayList<ImageView>();

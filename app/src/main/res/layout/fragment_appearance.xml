@@ -6,26 +6,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="114dp"
+        android:layout_height="86dp"
         android:layout_weight="1"
         android:background="#ffffff">
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#ff735c"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="视频1"
+            android:backgroundTint="#ff735c"
+            android:text="优选段"
             android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#ffffff"
-            android:text="视频2"
+            android:text="特辑"
             android:textColor="@color/black" />
     </LinearLayout>
 

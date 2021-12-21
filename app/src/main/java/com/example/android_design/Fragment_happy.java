@@ -41,6 +41,9 @@ public class Fragment_happy extends Fragment {
             @Override
             public void onClick(View v) {
 
+                Intent intent=new Intent();
+                intent.setClass(getActivity(), Activity_video.class);
+                getActivity().startActivity(intent);
             }
         });
 

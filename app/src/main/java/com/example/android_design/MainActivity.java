@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private RadioButton rgb2;
     private RadioButton rgb3;
     private RadioButton rgb4;
+
+    private ImageView img1, img2;
 
     private FragmentManager fManager;
     private Fragment_appearance fg1;
@@ -36,6 +39,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         rgb2 = (RadioButton)findViewById(R.id.radioButton2);
         rgb3 = (RadioButton)findViewById(R.id.radioButton3);
         rgb4 = (RadioButton)findViewById(R.id.radioButton4);
+
+        img1 = (ImageView)findViewById(R.id.img_pos);
+        img2 = (ImageView)findViewById(R.id.img_more);
+
+        img1.setImageResource(R.mipmap.poisition);
+        img2.setImageResource(R.mipmap.more);
 
         RadioButton[] rbs = new RadioButton[4];
         rbs[0] =rgb1;
